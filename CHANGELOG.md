@@ -1,3 +1,9 @@
+## Unreleased
+
+### Fixed
+
+- A picture sent to a Magpie model that takes images now reaches the model. Before, droid dropped it with "this model does not support image inputs", because the Runtime Overlay left `noImageSupport` off and droid reads a custom model without that field as one that cannot take images.
+
 ## 1.59.0 - 2026-10-20
 
 ### Added
